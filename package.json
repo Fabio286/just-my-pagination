@@ -1,0 +1,20 @@
+{
+  "name": "just-my-pagination",
+  "version": "1.0.0",
+  "description": "A simple pagination module that returns HTML pagination links for your front-end projects.",
+  "main": "pagination.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "pagination",
+    "express",
+    "front-end"
+  ],
+  "author": "Fabio Di Stasio",
+  "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Fabio286/just-my-pagination.git"
+  }
+}
