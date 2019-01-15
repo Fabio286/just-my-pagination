@@ -53,8 +53,6 @@ pagination = require('just-my-pagination').getPagination(options);
 
 ## Options
 
-- `range` (Optional, default: `3`) Number of links before and after actual page number.
-
 | Prop | Description | Default |
 |---|---|---|
 | **pName** | Absolute path of the page where you want to use JMP. | *None* |
