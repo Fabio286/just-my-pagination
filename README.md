@@ -30,37 +30,41 @@ pagination = require('just-my-pagination').getPagination(options);
 ```html
 <div id="pagination">
    <span>
-      <a href="/example/1/?order=date&amp;sort=desc"><i class="material-icons">first_page</i></a>
+      <a href="/example/1/?order=date&sort=desc"><i class="material-icons">first_page</i></a>
    </span>
    <span>
-      <a href="/example/3/?order=date&amp;sort=desc"><i class="material-icons">chevron_left</i></a>
+      <a href="/example/3/?order=date&sort=desc"><i class="material-icons">chevron_left</i></a>
    </span>
-   <a href="/example/1/?order=date&amp;sort=desc">1</a>
-   <a href="/example/2/?order=date&amp;sort=desc">2</a>
-   <a href="/example/3/?order=date&amp;sort=desc">3</a>
+   <a href="/example/1/?order=date&sort=desc">1</a>
+   <a href="/example/2/?order=date&sort=desc">2</a>
+   <a href="/example/3/?order=date&sort=desc">3</a>
    <strong>4</strong>
-   <a href="/example/5/?order=date&amp;sort=desc">5</a>
-   <a href="/example/6/?order=date&amp;sort=desc">6</a>
-   <a href="/example/7/?order=date&amp;sort=desc">7</a>
+   <a href="/example/5/?order=date&sort=desc">5</a>
+   <a href="/example/6/?order=date&sort=desc">6</a>
+   <a href="/example/7/?order=date&sort=desc">7</a>
    <span>
-      <a href="/example/5/?order=date&amp;sort=desc"><i class="material-icons">chevron_right</i></a>
+      <a href="/example/5/?order=date&sort=desc"><i class="material-icons">chevron_right</i></a>
    </span>
    <span>
-      <a href="/example/25/?order=date&amp;sort=desc"><i class="material-icons">last_page</i></a>
+      <a href="/example/25/?order=date&sort=desc"><i class="material-icons">last_page</i></a>
    </span>
 </div>
 ```
 
 ## Options
 
-- `pName` Absolute path of the page where you want to use JMP.
-- `total` Total number of results showed per page (required to calculate how many page there is).
-- `limit` How many results you show per page (required to calculate how many page there is).
-- `page` Actual page number. As you can see in above example it's wrapped in a `strong` tag.
-- `query` URL query string to pass throug pages.
-- `pagID` (Optional, default: `pagination`) HTML ID property name of pagination block.
-- `firstPage` (Optional, default: "`<i class="material-icons">first_page</i>`") HTML of first page link.
-- `prevPage` (Optional, default: "`<i class="material-icons">chevron_left</i>`") HTML of previous page link.
-- `nextPage` (Optional, default: "`<i class="material-icons">chevron_left</i>`") HTML of next page link.
-- `lastPage` (Optional, default: "`<i class="material-icons">last_page</i>`") HTML of last page link.
 - `range` (Optional, default: `3`) Number of links before and after actual page number.
+
+| Prop | Description | Default |
+|---|---|---|
+| **pName** | Absolute path of the page where you want to use JMP. | *None* |
+| **total** | Total number of results showed per page (required to calculate how many page there is). | *None* |
+| **limit** | How many results you show per page (required to calculate how many page there is). | *None* |
+| **page** | Actual page number. As you can see in above example it's wrapped in a `strong` tag. | *None* |
+| **query** | URL query string to pass throug pages. | *None* |
+| **pagID** | (Optional) HTML ID property name of pagination block. | `pagination` |
+| **firstPage** | (Optional) HTML of first page link. | `<i class="material-icons">first_page</i>` |
+| **prevPage** | (Optional) HTML of previous page link. | `<i class="material-icons">chevron_left</i>` |
+| **nextPage** | (Optional) HTML of next page link. | `<i class="material-icons">chevron_left</i>` |
+| **lastPage** | (Optional) HTML of last page link. | `<i class="material-icons">last_page</i>` |
+| **range** | (Optional) Number of links before and after actual page number. |  `3` |
