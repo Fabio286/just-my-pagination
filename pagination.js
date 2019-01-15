@@ -12,7 +12,7 @@ module.exports = {
     * @param {string} [args.pagId="pagination"] - HTML ID property name
     * @param {string} [args.firstPage="<i class="material-icons">first_page</i>"] - First page link content
     * @param {string} [args.prevPage="<i class="material-icons">chevron_left</i>"] - Previous page link content
-    * @param {string} [args.lastPage="<i class="material-icons">first_page</i>"] - Last page link content
+    * @param {string} [args.lastPage="<i class="material-icons">last_page</i>"] - Last page link content
     * @param {string} [args.nextPage="<i class="material-icons">chevron_left</i>"] - Next page link content
     * @param {number} [args.range=3] - Links range before and after actual page number 
     * @returns {string} HTML pagination
